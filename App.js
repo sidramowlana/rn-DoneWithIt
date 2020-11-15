@@ -4,15 +4,17 @@ import {
   useDeviceOrientation,
   useDimensions,
 } from "@react-native-community/hooks";
-import WelcomeScreen from "./app/src/screens/WelcomeScreen";
-import ViewImageScreen from "./app/src/screens/ViewImageScreen";
+// import WelcomeScreen from "./app/src/screens/WelcomeScreen";
+// import ViewImageScreen from "./app/src/screens/ViewImageScreen";
+import WorkWithMoshScreen from "./app/src/screens/WorkWithMoshScreen";
 
 export default function App() {
   const { height, width } = useDimensions().window;
   const landscape = width > height;
   return (
     // <WelcomeScreen />
-    <ViewImageScreen />
+    // <ViewImageScreen />
+    <WorkWithMoshScreen />
   );
 }
 
